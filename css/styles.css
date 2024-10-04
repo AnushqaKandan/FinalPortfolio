@@ -2962,6 +2962,53 @@ td:last-child {
 .s-pagecontent1{
 	margin-top: 3rem;
 }
+/* Contact */
+/* Add this to your styles.css or a new CSS file */
+
+.form-card{
+	width: 30rem;
+}
+.contact-info{
+	margin-left: 8rem;
+	margin-top: 10rem;
+}
+.mb-3 {
+	width: 80%; /* Ensure form fields take full width */
+	margin: auto;
+  }
+  
+  .message {
+	height: 20rem;
+  }
+
+
+    /* Custom CSS for flex layout */
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px; /* Add margin to the top */
+    }
+    .contact-card, .form-card {
+        flex: 1; /* Allow the cards to grow */
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+        margin: 10px; /* Margin between cards */
+    }
+   
+    .form-control {
+        width: 100%; /* Make inputs full width */
+        padding: 10px; /* Add padding for better spacing */
+		background-color:#363737;
+    }
+    .last-button {
+		display: flex;
+		justify-content: center; /* Center the links horizontally */
+		gap: 1.5rem; /* Add space between the links */
+		margin-top: -2rem;
+		margin-bottom: 1rem;
+    }
+
 
 /* ------------------------------------------------------------------- 
  * ## blog card
@@ -3407,7 +3454,6 @@ img[alt='project2'] {
 
 .card-link{
     font-size: 3rem;
-
   }
 
 
