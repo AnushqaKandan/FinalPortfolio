@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+   
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner width-sixteen-col">
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                    </div>
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> 
+                <nav class="s-header__nav sticky-top">
+                    <ul class="s-header__menu-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Education & Experience</a></li>
+                        <li><a href="blog.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul> 
+                    <div class="s-header__contact">
+                        <a href="contact.html" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>                        
+                    </div>
+    
+                </nav>
+            </div>  
+        </header> 
+
+
+
+        <!-- # site main content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+               <section class="s-pageheader pageheader">
+                    <div class="row">
+                        <div class="column xl-12">
+                            <h1 class="page-title">
+                                <span class="page-title__small-type text-pretitle">About</span>
+                                Hi, I'm Anushqa
+                            </h1>
+                            
+                        </div>
+                    </div>
+               </section> <!-- end pageheader --> 
+
+               <section class="s-pagecontent pagecontent">
+
+                    <div class="row pageintro">
+                        <div class="column xl-6 lg-12">
+                            <h2 class="text-display-title">Empowering Change: I Lead with Heart and Vision!</h2>
+                        </div>
+                        <div class="column xl-6 lg-12 u-flexitem-x-right">
+                            <p class="lead">
+                                My passion for coding ignited when I first joined the tech team at my church. I remember the excitement of being entrusted with setting up sound systems, handling projectors, and making sure everything ran smoothly behind the scenes. It was here that I realized how technology could bring people together, enhance experiences, and make a difference in ways I had not imagined. Every challenge, whether it was troubleshooting a glitch or designing a new system—felt like solving a puzzle, and I loved it. This journey not only sharpened my technical skills but also taught me the value of collaboration, patience, and creativity. What started as a way to serve my community became the spark for a lifelong love of coding, driving me to explore, learn, and create with technology.
+                            </p>
+                        </div>                       
+                    </div> <!-- end pageintro -->   
+                    
+        
+
+                    <div class="row width-narrower pagemain">
+                        <div class="column xl-12"> 
+
+                            <h2>Why Work With Me</h2>
+                            <p>
+                                Collaborating with me on your project means leveraging my extensive expertise in crafting innovative solutions that drive success. I excel in fostering collaboration and open communication, ensuring that diverse perspectives are valued and integrated into the process. My adaptability allows me to quickly embrace new technologies, while my strong problem-solving skills empower me to tackle challenges head-on with creativity and efficiency. I prioritize user experience in every endeavor, delivering solutions that not only meet technical requirements but also resonate with users. With a commitment to excellence and a results-driven mindset, I strive to exceed expectations and create impactful outcomes that align with your organization’s goals. Let’s work together to build something exceptional.
+                            </p>
+                   </div> <!-- end grid-block-->
+
+                   <h3>My Skills</h3>
+                   <div class="skills-grid"> 
+                   <div class="card text-white cardSkills">
+                    <div id="details">
+                      <div v-if="skills?.length">
+                          <img src="https://anushqakandan.github.io/All-images/vue/HTML.png" alt="skills" class="img-skills" loading="lazy">
+                       <div class="card-body aboutbod">
+                          <p class="Skills-Name">HTML5</p>
+                        </div>
+                      </div> 
+                    </div> 
+                </div>
+
+                <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/CSS.png " alt="skills" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">CSS3</p>
+                          </div>
+                       </div>
+                    </div> 
+                   </div>
+                   <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/Bootstrap.png " alt="skills" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">Bootstrap</p>
+                      
+                         </div>
+                       </div>
+                    </div> 
+                   </div>
+               
+                   <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/Javascript3.png" alt="skills2" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">Javascript</p>
+                         </div>
+                       </div>
+                    </div> 
+                   </div>
+               
+                   <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/Vue1.webp" alt="skills1" class="img-skills" loading="lazy">
+                           <div class="card-body aboutbod">
+                           <p class="Skills-Name">Vue.JS</p>
+                          
+                       </div>
+                       </div>
+                    </div> 
+                   </div>
+               <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/nodejs.png" alt="skills" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">Node.JS</p>
+                          
+                         </div>
+                       </div>
+                    </div> 
+                   </div>
+                   <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/mysql2.png" alt="skills" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">MySQL</p>
+                           
+                         </div>
+                       </div>
+                    </div> 
+                   </div>
+               
+                   <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/Leadership1.png " alt="skills" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">Leadership</p>
+                        
+                         </div>
+                     </div>
+                    </div> 
+                   </div>
+               
+                   <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/Communication.png" alt="skills" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">Communication Skills</p>
+
+                         </div>
+                       </div>
+                    </div> 
+                 </div>
+                     <div class="card text-white cardSkills">
+                    <div id="details">
+                       <div v-if="skills?.length">
+                           <img src="https://anushqakandan.github.io/All-images/vue/Practical1.png " alt="skills" class="img-skills" loading="lazy">
+                         <div class="card-body aboutbod">
+                           <p class="Skills-Name">Practical Skills</p>
+                         </div>
+                       </div>
+                       
+                    </div> 
+                </div> 
+            </div>
+
+
+                    <div>
+                        <h2 class="u-add-bottom">My Values & Beliefs</h2>
+                        <div class="grid-list-items list-items">
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">Integrity</h6>
+                                </div>
+                                <p>
+                                    I believe in maintaining honesty and transparency in all my interactions. Integrity is the foundation of trust, and I strive to uphold ethical standards in every project, ensuring that my actions align with my words.
+                                </p>
+                            </div>
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">Collaboration</h6>
+                                </div>
+                                <p> 
+                                    I value teamwork and the power of diverse perspectives. Working collaboratively not only fosters creativity but also leads to more innovative solutions. I actively listen and encourage input from all team members to achieve our common goals.
+                                </p>
+                            </div>
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">Continuous Growth</h6>
+                                </div>
+                                <p>
+                                    I am committed to lifelong learning and personal development. Embracing new challenges and expanding my skill set allows me to adapt to evolving environments and stay at the forefront of industry trends.
+                                </p>
+                            </div>
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">Empathy</h6>
+                                </div>
+                                <p>
+                                    Understanding and valuing the perspectives of others is essential to fostering meaningful connections. I approach every situation with empathy, striving to create an inclusive environment where everyone feels heard and respected.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div> <!-- end pagemain -->
+
+               </section> <!-- pagecontent -->
+
+        </section> <!-- s-content-->
+
+
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/anushqa-kandan-09379a317/" target="_blank">
+                                <i class="lab la-linkedin" style="font-size: 5rem"></i>     
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/anushqakandan" target="_blank">
+                                <i class="lab la-github"  style="font-size: 5rem"></i>
+                            </a>
+                        </li>
+                    </ul> <!-- end s-footer__social -->
+                                      
+                </div>
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Copyright Anushqa 2024</span> 
+                    </p>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                    </a>
+                </div> <!-- end ss-go-top -->
+            </div>
+            
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
