@@ -3490,6 +3490,13 @@ img[alt='resume3'] {
     }
 }
 
+@media screen and (max-width: 420px) {
+	img[alt='resume3']{
+		margin-left: -3rem;
+		
+	}
+}
+
 @media screen and (max-width: 1500px) {
 	.sigmaa{
 		margin-left: 0rem;
