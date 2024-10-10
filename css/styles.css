@@ -2950,7 +2950,10 @@ td:last-child {
     .cardSkills {
         
 		width: 13rem; /* Further reduced width for smaller screens */
-    }
+	}
+	.Skills-Name{
+       font-size: 1.5rem;
+	}
    
 }
 
