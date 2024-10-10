@@ -3017,10 +3017,65 @@ td:last-child {
 	width: 80%; /* Ensure form fields take full width */
 	margin: auto;
   }
+ 
+  .last-button .subby {
+	height: 5rem;
+	width: 13rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+   color     : var(--color-link);
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid var(--color-link);
+	display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+
+}
+
+.last-button .subby:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid var(--color-link);
+    box-shadow: 4px 5px 17px -4px var(--color-link);
+}
+
+.last-button .subby::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-link);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.last-button .subby:hover::before {
+    width: 250%;
+}
+
   
   .message {
 	height: 20rem;
   }
+
+  @media (max-width: 580px) {
+	.last-button .subby {
+        width: 10rem;
+		font-size: 10px;
+		
+    }
+   
+}
 
   @media screen and (max-width: 1200px) {
     .deets {
