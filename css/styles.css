@@ -1267,10 +1267,7 @@ h4,
 h5,
 .h5,
 h6,
-.h6 {
-	margin-top   : var(--vspace-1_75);
-	margin-bottom: var(--vspace-0_5);
-}
+
 
 h1,
 .h1 {
@@ -2842,12 +2839,29 @@ td:last-child {
 }
 
 /* Skills Section */
+.skilly {
+    display: block; /* Ensure it's treated as a block */
+    text-align: center;
+}
 
+.ski-container{
+	display: flex;
+    justify-content: center; /* Centers items horizontally */
+}
+
+.Skills-Name{
+	color: white;
+	font-family: var(--font-1);
+	font-weight: 400;
+	font-size: 2rem;
+	
+}
 .skills-grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr); /* Display 5 skills in a row */
 	gap: 1rem;
   }
+
   
   .cardSkills {
 	margin-top: 1rem;
@@ -2887,8 +2901,6 @@ td:last-child {
   
   .aboutbod {
 	font-weight: bold;
-	  font-family: "Tiro Devanagari Hindi", serif;
-	  font-weight: 400;
 	  background-color:rgb(208, 127, 14);
 	  border-bottom-left-radius: 10%;
 	  border-bottom-right-radius: 10%;
@@ -2907,16 +2919,18 @@ td:last-child {
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
-	  .skills-grid {
-		  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-	  }
-	  .cardSkills {
-		  height: 10rem; /* Further reduced height for smaller screens */
-	  }
-	  img[alt='skills'], img[alt='skills1'], img[alt='skills2'] {
-		  height: 5rem; /* Adjusted for smaller screens */
-	  }
-  }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Display 2 skills in a row for smaller screens */
+    }
+    .cardSkills {
+        height: 10rem; /* Further reduced height for smaller screens */
+    }
+    img[alt='skills'], img[alt='skills1'], img[alt='skills2'] {
+        height: 5rem; /* Adjusted for smaller screens */
+    }
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * ## social list
@@ -2962,8 +2976,9 @@ td:last-child {
 .s-pagecontent1{
 	margin-top: 3rem;
 }
+
+
 /* Contact */
-/* Add this to your styles.css or a new CSS file */
 
 .form-card{
 	width: 30rem;
@@ -2980,6 +2995,17 @@ td:last-child {
   .message {
 	height: 20rem;
   }
+
+  @media screen and (max-width: 1200px) {
+    .deets {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically, if needed */
+        text-align: center; /* Center text */
+    }
+}
+
 
 
     /* Custom CSS for flex layout */
@@ -2999,8 +3025,9 @@ td:last-child {
     .form-control {
         width: 100%; /* Make inputs full width */
         padding: 10px; /* Add padding for better spacing */
-		background-color:#363737;
+		
     }
+
     .last-button {
 		display: flex;
 		justify-content: center; /* Center the links horizontally */
@@ -3295,9 +3322,7 @@ td:last-child {
 
 
 /* Certificates */
-.Skills-Name{
-	color: white;
-}
+
 
 .s-about .certi {
     text-align: center;
@@ -3341,8 +3366,7 @@ td:last-child {
 }
 
 
-/* <section class="s-pagecontent pagecontent">
-             <h2>Education</h2> */
+
 
 .eduex h2{
 	text-align: center;
@@ -3413,17 +3437,22 @@ img[alt='resume3'] {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     img[alt='resume'] {
-        width: 15rem;
-        height: 12rem;
+        width: 10rem;
+        height: 8rem;
         margin: auto;
     }
+	img[alt='resume1']{
+		width: 13rem;
+        height: 10rem;
+        margin: auto;
+	}
 
-    img[alt='resume1'],
-    img[alt='resume2'] {
+    img[alt='resume2']
+    {
         width: 15rem;
-        height: 15rem;
+        height: 10rem;
         margin: auto;
     }
 
@@ -3432,6 +3461,16 @@ img[alt='resume3'] {
         width: 14rem; /* Adjust for smaller screens */
         height: auto; /* Keep aspect ratio */
     }
+}
+
+@media screen and (max-width: 1500px) {
+	.sigmaa{
+		margin-left: 0rem;
+		
+	}
+	.studdy{
+	margin-left: 0rem;
+	}
 }
 
 /* Projects */
@@ -3504,7 +3543,9 @@ img[alt='project2'] {
 
 .s-header__block {
 	z-index : 101;
-	position: relative;
+	position: fixed;
+	background-color: var(--color-2-dark);
+	margin-top: -1.8rem;
 }
 
 /* --------------------------------------------------------------------
@@ -3542,7 +3583,6 @@ img[alt='project2'] {
 	position: fixed; 
     top: 0;        
     width: 100%;    
-	
 	margin-left: -9rem;    
 	background-color: var(--color-2-dark);
 }
@@ -3555,7 +3595,9 @@ img[alt='project2'] {
 	margin    : 0 4rem 0 0;
 	padding   : 0;
 	
+	
 }
+
 
 
 .s-header__menu-links li {
@@ -3571,6 +3613,7 @@ img[alt='project2'] {
 	color              : var(--color-2-lightest);
 	padding            : 0 1.2rem;
 	transition-property: color, background-color;
+	
 }
 
 .s-header__menu-links a:focus,
@@ -3706,7 +3749,7 @@ img[alt='project2'] {
 		padding-left    : calc(var(--gutter) + 4.4vw);
 		padding-bottom  : 4.4rem;
 		margin          : 0;
-		position        : absolute;
+		position        : fixed;
 		top             : calc(var(--vspace-1_5) * -1);
 		left            : 0;
 	}
@@ -4606,6 +4649,7 @@ img[alt='project2'] {
  * ------------------------------------------------------------------- */
 .ss-copyright {
 	margin: 0 var(--vspace-2) 0 0;
+	margin-left: -10rem;
 }
 
 .ss-copyright a {
@@ -4679,6 +4723,7 @@ img[alt='project2'] {
 @media screen and (max-width: 1200px) {
 	.ss-copyright {
 		margin-top: var(--vspace-0_5);
+		margin-left: 0rem;
 	}
 
 	.ss-go-top {

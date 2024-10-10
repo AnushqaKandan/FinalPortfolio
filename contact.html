@@ -12,28 +12,17 @@
     </script>
 
     <!-- CSS ================================================== -->
-   
+   <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     
-    <style>
-        /* Custom CSS for flex layout */
-        .contact-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 20px; /* Add margin to the top */
-        }
-        .contact-card, .form-card {
-            flex: 1; /* Allow the cards to grow */
-            margin-right: 20px; /* Space between the cards */
-            padding: 20px;
-            border-radius: 8px; /* Rounded corners */
-        }
-        .form-card {
-            margin-right: 0; /* No margin on the right for the last card */
-        }
-    </style>
+   
 </head>
 
 <body id="top">
@@ -76,86 +65,62 @@
                 <div class="row">
                     <div class="column xl-12">
                         <h1 class="page-title">
-                            <span class="page-title__small-type text-pretitle">Contact</span>
+                          
                             Get In Touch
                         </h1>                            
                     </div>
                 </div>
             </section> <!--pageheader -->  
+ 
+            <section class="s-pagecontent pagecontent">
 
-            <div class="container">
-                <div class="contact-container">
-                    <!-- Contact Info Card -->
-                    <div class="card contact-card text-white">
-                        <div class="contact-info">
-                            <div class="contact-block">
-                                <h6>Email</h6>
-                                <a href="mailto:anushqakandan03@gmail.com">anushqakandan03@gmail.com</a>
-                            </div>
-                            <div class="contact-block">
-                                <h6>Phone</h6>
-                                <p>061-369-9241</p>
-                            </div>
-                            <div class="contact-block">
-                                <h6>Location</h6>
-                                <p>Mitchells Plain, Cape Town</p>
-                            </div>
-                            <div class="contact-block">
-                                <h6>Socials</h6>
-                            <p>
-                                <a href="https://www.linkedin.com/in/anushqa-kandan-09379a317/" target="_blank">
-                                    <i class="lab la-linkedin" style="font-size: 3.5rem"></i>     
-                                </a>
-                                <a href="https://github.com/anushqakandan" target="_blank">
-                                    <i class="lab la-github" style="font-size: 3.5rem; margin-left: 10px"></i>
-                                </a>
-                            </p>
-                        </div>
-                        
-                        </div>
+                <div class="row pageintro">
+                    <div class="column xl-6 lg-12 deets">
+                        <h6>Email</h6>
+                        <p>anushqakandan03@gmail.com</p>
+                        <h6>Phone</h6>
+                        <p>061-369-9241</p>
+                        <h6>Location</h6>
+                        <p>Mitchells Plain, Cape Town</p>
+                        <h6>Socials</h6>
+                        <p>
+                            <a href="https://www.linkedin.com/in/anushqa-kandan-09379a317/" target="_blank">
+                                <i class="lab la-linkedin" style="font-size: 3.5rem"></i>
+                            </a>
+                            <a href="https://github.com/anushqakandan" target="_blank">
+                                <i class="lab la-github" style="font-size: 3.5rem; margin-left: 10px"></i>
+                            </a>
+                        </p>
                     </div>
 
-                    <!-- Form -->
-                    <div class="card form-card text-white">
+                    <div class="column xl-6 lg-12 u-flexitem-x-right">
                         <h2 class="display-2 text-center">Let's Work Together</h2>
                         <form action="https://formspree.io/f/myzgydyw" method="POST">
                             <div class="mb-3">
                                 <label for="exampleInputName" class="form-label">Name</label>
-                                <input
-                                  name="name"
-                                  type="text"
-                                  class="form-control"
-                                  id="exampleInputName"
-                                  required
-                                />
+                                <input name="name" type="text" class="form-control" id="exampleInputName" required />
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input
-                                  name="email"
-                                  type="email"
-                                  class="form-control"
-                                  id="exampleInputEmail1"
-                                  required
-                                />
+                                <input name="email" type="email" class="form-control" id="exampleInputEmail1" required />
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Message</label>
-                                <textarea
-                                  name="message"
-                                  class="form-control message"
-                                  id="exampleInputMessage"
-                                  required
-                                ></textarea>
+                                <textarea name="message" class="form-control message" id="exampleInputMessage" required></textarea>
                             </div>
                             <div class="last-button">
-                                <button type="submit" class="btn">Submit</button>
-                                <button type="reset" class="btn">Clear</button>
+                                <button type="submit" class="btn subby">Submit</button>
+                                <button type="reset" class="btn subby">Clear</button>
                             </div>
                         </form>
-                    </div>
-                </div> <!-- End contact-container -->
-            </div> <!-- End container -->
+
+                    </div>                       
+                </div> <!-- pageintro -->   
+
+           </section> <!-- pagecontent -->
+
+
+            
         </section> <!-- s-content-->
 
         <!-- # footer ================================================== -->
