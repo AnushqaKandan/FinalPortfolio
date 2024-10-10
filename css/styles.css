@@ -2872,7 +2872,7 @@ td:last-child {
 	justify-content: flex-end;
 	height: 15rem; /* Maintain height */
 	overflow: hidden;
-	width: 100%; /* Ensure full width of grid column */
+	width: 20rem; /* Ensure full width of grid column */
   }
 
 
@@ -2924,12 +2924,35 @@ td:last-child {
     }
     .cardSkills {
         height: 10rem; /* Further reduced height for smaller screens */
+		width: 15rem; /* Further reduced width for smaller screens */
     }
     img[alt='skills'], img[alt='skills1'], img[alt='skills2'] {
         height: 5rem; /* Adjusted for smaller screens */
     }
 }
 
+@media (max-width: 1090px) {
+    .cardSkills {
+        
+		width: 18rem; /* Further reduced width for smaller screens */
+    }
+   
+}
+
+@media (max-width: 984px) {
+    .cardSkills {
+        
+		width: 15rem; /* Further reduced width for smaller screens */
+    }
+   
+}
+@media (max-width: 838px) {
+    .cardSkills {
+        
+		width: 13rem; /* Further reduced width for smaller screens */
+    }
+   
+}
 
 
 /* ------------------------------------------------------------------- 
