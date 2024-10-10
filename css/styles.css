@@ -3484,8 +3484,9 @@ img[alt='resume3'] {
 
     /* Add for resume3 for consistency */
     img[alt='resume3'] {
-        width: 14rem; /* Adjust for smaller screens */
+        width: 10rem; /* Adjust for smaller screens */
         height: auto; /* Keep aspect ratio */
+		
     }
 }
 
